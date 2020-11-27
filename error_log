@@ -1,0 +1,12 @@
+[13-Aug-2020 21:11:59 America/Chicago] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[20-Aug-2020 01:43:45 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[20-Aug-2020 01:43:45 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20100525
+These options need to match
+ in Unknown on line 0
+[17-Sep-2020 10:14:15 America/Chicago] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0

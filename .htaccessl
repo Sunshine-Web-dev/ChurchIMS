@@ -1,0 +1,46 @@
+Options +FollowSymlinks
+
+RewriteEngine on
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteRule ^/?product/([\-a-zA-Z\d]+)/?$ index.php?show=product&product=$1 [QSA,L]
+
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteRule ^/?profile/([\-a-zA-Z\d]+)/?$ index.php?show=profile&profile_id=$1 [QSA,L]
+
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteRule ^/?cms/([\-a-zA-Z\d]+)/?$ index.php?show=cms&content=$1 [QSA,L]
+
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteRule ^/?category/([\-a-zA-Z\d]+)/?$ index.php?show=category&category_id=$1 [QSA,L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteRule ^/?report/([\-a-zA-Z\d]+)/?$ index.php?show=report&report_id=$1 [QSA,L]
+
+
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteRule ^/?(home|admin_staffmembering|admin_contributing|admin_expensing|admin_staffdetail|admincontdetail|admin_expdetail|admin_contdetail|currency|currency_list|currency_edit|church|addchurch|cd|mycd|mycdmdy|cnew|contribute|contributing|contributecategory_editform|expense|expensing|expense_edit|expensecategory|expensecategory_editform|staffmember|staffmembering|staffmember_list|staffaccount|registermember|registerstaff|fundcategory|expensecategory_form|expensecategory_list|expense|expensing|contributecateogry_form|contributioncategory_list|profile|editprofile|visitor_report|report|changepwd|changepassword|logout|catalog|setting|employees|contcatlist|expcatlist|currencylist|contcat_form|expcat_form|currency_form|contribute_from|contdetail|expense_from|expdetail|staffcategory|staffcategory_form|staffdetail|contributemember|contmemfrm|contmemdetail|allmember)/?$ index.php?show=$1 [QSA,L]

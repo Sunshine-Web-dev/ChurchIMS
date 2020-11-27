@@ -1,4 +1,4 @@
- <!-- ========== Left Sidebar Start ========== -->
+ <!-- ========== Left Sidebar Stsdart ========== -->
             <div class="left side-menu">
                 <div class="sidebar-inner slimscrollleft">
                     <!--- Divid12er -->

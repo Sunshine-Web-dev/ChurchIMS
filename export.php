@@ -1,7 +1,7 @@
 <?php
 require_once("config/config.php");
 error_reporting(0);
-//require the language file
+//require the langu452age file
 require_once('lang/' . strtolower(SITE_LANG) . '/rs_lang.website.php');
 
 $objCommon 		= new Common;

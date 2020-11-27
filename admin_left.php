@@ -1,7 +1,7 @@
  <!-- ========== Left Sidebar Start ========== -->
             <div class="left side-menu">
                 <div class="sidebar-inner slimscrollleft">
-                    <!--- Divider -->
+                    <!--- Divid12er -->
                     <div id="sidebar-menu">
                         <ul>
 
